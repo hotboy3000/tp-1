@@ -1,0 +1,188 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: -webkit-xxx-large;
+  text-align: center;
+  color: orangered;
+  margin: 17px 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.navBar a {
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.navBar a:hover {
+  color: orangered;
+}
+.navBar .colorOrg a {
+  color: orangered;
+}
+
+.dropBtn {
+  background-color: white;
+  color: gray;
+  border: none;
+  font-weight: bold;
+}
+.dropBtn:hover {
+  color: orangered;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.dropDown-content {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.dropDown-content a {
+  color: gray;
+  display: block;
+  background-color: white;
+}
+
+.dropDown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropDown-content {
+  display: block;
+}
+
+.imgRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-box {
+  width: 24%;
+  /* Five images in a row */
+  min-height: 100px;
+  float: left;
+  /* To allow multiple blocks align together in a row */
+  margin: 0.5%;
+  position: relative;
+}
+.img-box img {
+  display: block;
+  /* Take the whole available width */
+  max-width: 100%;
+  /* responsive */
+  height: auto;
+}
+
+.img-box:hover .overlay {
+  height: 20%;
+}
+
+.text p {
+  color: white;
+  margin: 15px 33px;
+}
+.text p:first-of-type {
+  font-size: small;
+  margin-top: 16px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: orangered;
+  opacity: 0.6;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  transition: 0.5s ease;
+}
+
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imgBtnContainer {
+  position: relative;
+  width: 25%;
+}
+
+.imgBtnContainer img {
+  border-radius: 15%;
+  max-width: 100%;
+  /* responsive */
+  height: auto;
+}
+
+.imgBtnContainer .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 66px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btn {
+  background-color: gray;
+}
+.btn button:last-of-type {
+  background-color: orangered;
+}
+
+.youtubeVideo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.video {
+  width: 50%;
+  max-width: 100%;
+  /* responsive */
+  height: auto;
+}
+
+.presentationCard {
+  width: 25%;
+  text-align: center;
+}
+.presentationCard img {
+  border-radius: 50%;
+  max-width: 100%;
+  /* responsive */
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
